@@ -1,0 +1,31 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+accounts-base@1.4.4
+accounts-facebook@1.3.2
+accounts-password@1.5.1
+# appcache
+audit-argument-checks@1.0.7
+# browser-policy
+check@1.3.1
+dynamic-import@0.5.1
+ecmascript@0.13.0-beta182.17
+es5-shim@4.8.0
+force-ssl@1.1.0
+meteor-base@1.4.0
+mongo@1.7.0-beta182.17
+standard-minifier-js@2.4.1
+server-render@0.3.1
+static-html
+tracker@1.2.0
+
+alanning:roles
+aldeed:collection2
+fourseven:scss
+ground:db
+npdev:legacy-proxy-polyfill
+npdev:async-proxy
+svelte:compiler

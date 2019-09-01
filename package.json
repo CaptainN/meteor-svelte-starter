@@ -1,0 +1,86 @@
+{
+  "name": "meteor-svelte",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "cross-env TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "bcrypt": "^3.0.6",
+    "meteor-node-stubs": "^0.4.1",
+    "simpl-schema": "^1.5.5",
+    "svelte": "^3.7.1",
+    "svelte-routing": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-do-expressions": "^7.5.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.10.0",
+    "eslint": "^6.2.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-meteor": "^6.0.0",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-svelte3": "^2.7.3"
+  },
+  "import/no-absolute-path": 0,
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js",
+    "nodeModules": {
+      "recompile": {
+        "svelte-routing": [
+          "client",
+          "server"
+        ]
+      }
+    }
+  },
+  "svelte:compiler": {
+    "hydratable": false,
+    "css": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "svelte3"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.svelte"
+        ],
+        "processor": "svelte3/svelte3"
+      }
+    ],
+    "rules": {
+      "import/no-absolute-path": 0
+    }
+  },
+  "eslintIgnore": [
+    ".meteor",
+    ".vscode",
+    "packages",
+    "node_modules"
+  ]
+}
