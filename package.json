@@ -13,7 +13,7 @@
     "meteor-node-stubs": "^0.4.1",
     "simpl-schema": "^1.5.5",
     "svelte": "^3.9.2",
-    "svelte-loadable": "^1.1.0",
+    "svelte-loadable": "^1.1.1",
     "svelte-routing": "^1.4.0"
   },
   "devDependencies": {
