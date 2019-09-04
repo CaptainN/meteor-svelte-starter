@@ -56,7 +56,7 @@
     }
   },
   "svelte:compiler": {
-    "hydratable": false,
+    "hydratable": true,
     "css": false
   },
   "eslintConfig": {
