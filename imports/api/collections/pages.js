@@ -1,3 +1,4 @@
+import 'meteor/aldeed:collection2'
 import { Mongo } from 'meteor/mongo'
 import { check } from 'meteor/check'
 import SimpleSchema from 'simpl-schema'
