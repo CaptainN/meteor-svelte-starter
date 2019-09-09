@@ -17,7 +17,7 @@ This is a starter project for Svelte on Meteor, produced by Kevin Newman (@Capta
 - Workable solution for SSR when a user is logged in. Probably will use [`alawi:ssr-helper`](https://github.com/aliogaili/ssr-helper/).
 
 ## Structure
-The project is set up with a fairly standard Meteor folder structure. It uses Meteor's `mainMondule` entry points defined in 'package.json'. Main entry points are `/client/main.js` and `/server/main.js`.
+The project is set up with a fairly standard Meteor folder structure. It uses Meteor's `mainMondule` entry points defined in `package.json`. Main entry points are `/client/main.js` and `/server/main.js`.
 
 ### Folders:
 | folder | description |
