@@ -1,6 +1,6 @@
 <script>
 import { Pages } from '/imports/api/collections/pages'
-import track from '/imports/utils/useTracker'
+import { track } from '/imports/utils/useTracker'
 
 export let slug = ''
 

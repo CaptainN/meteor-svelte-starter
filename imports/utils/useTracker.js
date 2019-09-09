@@ -1,7 +1,8 @@
+/* global Meteor */
 import { Tracker } from 'meteor/tracker'
 import { onDestroy } from 'svelte'
 
-export default function (func) {
+function trackClient (func) {
   const computation = Tracker.nonreactive(() =>
     Tracker.autorun(func)
   )
@@ -9,3 +10,10 @@ export default function (func) {
     computation.stop()
   })
 }
+function trackServer (func) {
+  return func()
+}
+
+export const track = Meteor.isClient
+  ? trackClient
+  : trackServer
