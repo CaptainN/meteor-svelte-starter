@@ -20,6 +20,8 @@ This is a starter project for Svelte on Meteor, produced by Kevin Newman (@Capta
 The project is set up with a fairly standard Meteor folder structure. It uses Meteor's `mainMondule` entry points defined in 'package.json'. Main entry points are `/client/main.js` and `/server/main.js`.
 
 ### Folders:
+| folder | description |
+|:---|:---|
 | /client/ | All client specific code and configuration, including styles (SCSS) and main HTML templates, goes here. |
 | /server/ | All server specific code and configuration goes here. |
 | /imports/ | Most of the package code will be included in this tree in its subdirectories. |
