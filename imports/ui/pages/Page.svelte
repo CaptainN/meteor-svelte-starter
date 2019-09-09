@@ -6,10 +6,14 @@ export let slug = ''
 
 let page
 let isReady
-track(function () {
-  isReady = Meteor.subscribe('page', slug).ready()
+
+track(() => {
+  isReady = Meteor.isClient
+    ? Meteor.subscribe('page', slug).ready()
+    : true
 })
-track(function () {
+
+track(() => {
   page = Pages.findOne({ slug })
 })
 </script>
