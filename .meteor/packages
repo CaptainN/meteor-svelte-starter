@@ -28,4 +28,5 @@ fourseven:scss
 ground:db
 npdev:legacy-proxy-polyfill
 npdev:async-proxy
+npdev:svelte-loadable
 svelte:compiler
