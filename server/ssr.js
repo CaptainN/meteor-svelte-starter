@@ -1,8 +1,8 @@
-import { onPageLoad } from 'meteor/server-render'
+import { FastRender } from 'meteor/staringatlights:fast-render'
 import { preloadAll } from 'meteor/npdev:svelte-loadable'
 import App from '/imports/ui/App.svelte'
 
-preloadAll().then(() => onPageLoad((sink) => {
+preloadAll().then(() => FastRender.onPageLoad((sink) => {
   const loadableHandle = {}
   const { html, css, head } = App.render({ loadableHandle, url: sink.request.url.pathname })
 

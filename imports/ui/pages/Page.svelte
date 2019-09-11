@@ -8,9 +8,7 @@ let page
 let isReady
 
 track(() => {
-  isReady = Meteor.isClient
-    ? Meteor.subscribe('page', slug).ready()
-    : true
+  Meteor.subscribe('page', slug).ready()
 })
 
 track(() => {
