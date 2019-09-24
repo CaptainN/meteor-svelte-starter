@@ -59,7 +59,8 @@
   },
   "babel": {
     "plugins": [
-      "svelte-loadable/babel"
+      "svelte-loadable/babel",
+      "@babel/plugin-proposal-optional-chaining"
     ]
   },
   "eslintConfig": {
