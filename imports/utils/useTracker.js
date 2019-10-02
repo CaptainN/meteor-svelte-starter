@@ -1,5 +1,4 @@
-/* global Meteor */
-import { Tracker } from 'meteor/tracker'
+/* global Meteor, Tracker */
 import { onDestroy } from 'svelte'
 
 function trackClient (func) {
@@ -11,7 +10,7 @@ function trackClient (func) {
   })
 }
 function trackServer (func) {
-  return func()
+  return Tracker.nonreactive(func)
 }
 
 export const track = Meteor.isClient
