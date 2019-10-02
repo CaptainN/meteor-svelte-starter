@@ -30,4 +30,4 @@ npdev:legacy-proxy-polyfill
 npdev:async-proxy
 npdev:svelte-loadable
 staringatlights:fast-render
-svelte:compiler
+svelte:compiler@4.0.0-beta.0!
