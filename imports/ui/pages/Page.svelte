@@ -8,7 +8,7 @@ let page
 let isReady
 
 track(() => {
-  Meteor.subscribe('page', slug).ready()
+  isReady = Meteor.subscribe('page', slug).ready()
 })
 
 track(() => {
@@ -18,7 +18,6 @@ track(() => {
 
 {#if !isReady}
   <div>Loading</div>
-{/if}
-{#if page}
+{:else if page}
   <div>{@html page.content}</div>
 {/if}
