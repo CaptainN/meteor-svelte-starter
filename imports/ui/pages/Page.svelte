@@ -1,5 +1,5 @@
 <script>
-import { Pages } from '/imports/api/collections/pages'
+import { PagesOffline } from '/imports/api/collections/pages'
 import { track } from '/imports/utils/useTracker'
 
 export let slug = ''
@@ -12,12 +12,12 @@ track(() => {
 })
 
 track(() => {
-  page = Pages.findOne({ slug })
+  page = PagesOffline.findOne({ slug })
 })
 </script>
 
-{#if !isReady}
-  <div>Loading</div>
-{:else if page}
+{#if page}
   <div>{@html page.content}</div>
+{:else if !isReady}
+  <div>Loading</div>
 {/if}
