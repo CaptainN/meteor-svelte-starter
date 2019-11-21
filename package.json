@@ -42,14 +42,8 @@
     "testModule": "tests/main.js",
     "nodeModules": {
       "recompile": {
-        "svelte-routing": [
-          "client",
-          "server"
-        ],
-        "svelte-loadable": [
-          "client",
-          "server"
-        ]
+        "svelte-routing": true,
+        "svelte-loadable": true
       }
     }
   },
