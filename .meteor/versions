@@ -60,7 +60,7 @@ mongo-dev-server@1.1.0
 mongo-id@1.0.7
 npdev:async-proxy@0.1.1
 npdev:legacy-proxy-polyfill@0.2.0
-npdev:svelte-loadable@1.0.0-alpha.1
+npdev:svelte-loadable@1.0.0-alpha.2
 npm-bcrypt@0.9.3
 npm-mongo@3.2.0
 ordered-dict@1.1.0
