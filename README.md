@@ -13,9 +13,7 @@ This is a starter project for Svelte on Meteor, produced by Kevin Newman (@Capta
 - Uses [`staringatlights:fast-render`](https://github.com/abecks/meteor-fast-render) to hydrate pub/sub data before hydration (no flash of loading).
 
 ## Features TODO
-- Proper offline first data. Right now data queries through Mongo are properly rendered in SSR, but then are rendered again client side without hydration, resulting in a "flash of loading".
 - Proper offline first module code. This can be implemented simply using Meteor's `appcache` package, but I'd like to provide a proper Service Worker.
-- Workable solution for SSR when a user is logged in. Probably will use [`alawi:ssr-helper`](https://github.com/aliogaili/ssr-helper/).
 - A way to provide a generic (no route specific SSR) page template for use with Service Worker Cache (the app shell pattern).
 
 ## Structure
