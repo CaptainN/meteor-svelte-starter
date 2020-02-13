@@ -4,15 +4,15 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-accounts-base@1.4.5
+accounts-base@1.5.0
 # accounts-facebook@1.3.2
-accounts-password@1.5.1
+accounts-password@1.5.2
 # appcache
 audit-argument-checks@1.0.7
 # browser-policy
 check@1.3.1
 dynamic-import@0.5.1
-ecmascript@0.13.0
+ecmascript@0.14.0
 es5-shim@4.8.0
 force-ssl@1.1.0
 meteor-base@1.4.0
@@ -22,7 +22,7 @@ server-render@0.3.1
 static-html
 tracker@1.2.0
 
-alanning:roles
+alanning:roles@3.2.0
 aldeed:collection2
 fourseven:scss
 ground:db
