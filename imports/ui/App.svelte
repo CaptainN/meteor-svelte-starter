@@ -3,12 +3,10 @@ import { register } from 'meteor/npdev:svelte-loadable'
 
 // Loaders must be registered outside of the render tree.
 const PageLoader = register({
-  loader: () => import('./pages/Page.svelte'),
-  resolve: () => require.resolve('./pages/Page.svelte')
+  loader: () => import('./pages/Page.svelte')
 })
 const HomeLoader = register({
-  loader: () => import('./home/Home.svelte'),
-  resolve: () => require.resolve('./home/Home.svelte')
+  loader: () => import('./home/Home.svelte')
 })
 </script>
 
