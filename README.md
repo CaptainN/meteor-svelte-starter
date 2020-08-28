@@ -5,7 +5,7 @@ This is a starter project for Svelte on Meteor, produced by Kevin Newman (@Capta
 
 ## Features
 - Uses [`svelte:compiler`](https://github.com/meteor-svelte/meteor-svelte) for Svelte integration with Meteor.
-- Perfect code splitting with Meteor's `dynamic-imports` through [`npdev:svetle-loadable`](https://github.com/CaptainN/npdev-svelte-loadable). See: `/imports/ui/App.svelte`.
+- Perfect code splitting with Meteor's `dynamic-imports` through [`npdev:svelte-loadable`](https://github.com/CaptainN/npdev-svelte-loadable). See: `/imports/ui/App.svelte`.
 - Routing using [`svelte-routing`](https://github.com/EmilTholin/svelte-routing). See: `/imports/ui/App.svelte`.
 - SSR using Meteor's `server-render`, with properly configured code split preloading through `npdev:svelte-loadable`. See: `/server/ssr.js`.
 - SSR hydration, with optimized route specific module preloading, using `npdev:svelte-loadable`. See: `/client/main.js`.
