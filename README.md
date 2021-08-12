@@ -1,3 +1,6 @@
+_Unmaintained_. I likely won't get back to this for a long long while.
+====================================================================
+
 Meteor Svelte Starter
 =====================
 
