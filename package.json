@@ -13,7 +13,7 @@
     "localforage": "^1.7.3",
     "meteor-node-stubs": "^1.0.0",
     "simpl-schema": "^1.5.9",
-    "svelte": "^3.20.1",
+    "svelte": "^3.49.0",
     "svelte-loadable": "^1.4.0",
     "svelte-routing": "^1.4.2"
   },
